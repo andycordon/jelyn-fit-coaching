@@ -1,13 +1,31 @@
 :root {
-  --violet: #6a1b9a;
-  --rose: #f093fa;
+  --violet: #1A0058;
+  --rose: #85309F;
   --blanc: #ffffff;
   --noir: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+}
+
+/* Titres, menus, boutons */
+h1, h2, h3, h4, h5, h6,
+nav ul li a,
+.brand-name,
+.cta-button,
+footer ul li a,
+footer .pictoAlig {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-size: 1.125rem;
 }
 
 header {
@@ -23,15 +41,26 @@ header {
   position: relative;
 }
 
+.brand-name {
+  font-size: 1.5rem;
+}
+
 .logo-form {
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
   display: block;
-  margin: -5rem auto 0 auto;
+  margin: 0 auto;
   animation: heartbeat 1.5s ease-in-out infinite;
   transform-origin: center;
   z-index: 1;
-
+}
+.logo-txt {
+  width: 50%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  margin: 2rem 0 0 0;
 }
 
 
@@ -53,22 +82,15 @@ header {
   }
 }
 
-.logo-txt {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: -18rem auto 0 auto;
-  transform-origin: center;
-}
-
 .logo img {
-  height: 40px;
+  height: 50px;
+  background-color: white;
+  padding: 0.5rem;
+  margin: -10px -10px -15px -10px;
+  border-radius: 0 0 2rem 0;
 }
 
-.brand-name {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.5rem;
-}
+
 
 .menu-icon {
   font-size: 2rem;
@@ -77,14 +99,15 @@ header {
 }
 
 nav {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
   position: absolute;
   top: 100%;
   right: 0;
   background: var(--violet);
   width: 100%;
   z-index: 2;
-
 }
 
 nav ul {
@@ -102,6 +125,11 @@ nav ul li a {
   padding: 1rem;
   color: var(--blanc);
   text-decoration: none;
+   transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--rose);
 }
 
 /* toggle menu */
@@ -110,7 +138,7 @@ nav ul li a {
 }
 
 #menu-toggle:checked + .menu-icon + nav {
-  display: block;
+  max-height: 500px; /* assez grand pour le menu */
 }
 
 .hero {
@@ -124,17 +152,13 @@ nav ul li a {
   text-align: center;
 }
 
-.hero img {
-  max-width: 80%;
-  height: auto;
-}
+
 
 .cta-button {
   margin-top: 2rem;
   padding: 1rem 2rem;
   background: var(--blanc);
   color: var(--violet);
-  font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -219,4 +243,155 @@ nav ul li a {
 /* Reset input */
 #menu-toggle {
   display: none;
+}
+
+
+
+
+
+
+
+
+footer {
+  background: var(--violet);
+  color: var(--blanc);
+  padding: 1rem;
+  text-align: center;
+  border-top: 0.3rem solid var(--rose);
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-social a {
+  color: var(--blanc);
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--rose);
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer-nav a {
+  color: var(--blanc);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--rose);
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+
+
+
+.sub-footer {
+  background-color: var(--noir);
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.sub-footer a {
+  color: var(--blanc);
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sub-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+section {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+section h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--violet);
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+ img {
+  max-width: 80%;
+  height: auto;
+}
+
+button {
+  background-color: var(--violet);
+  color: var(--blanc);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: none;
+  user-select: none;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--rose);
+  animation: jump-forward 0.3s forwards;
+}
+
+@keyframes jump-forward {
+  0% {
+    transform: translateZ(0);
+    box-shadow: none;
+  }
+  50% {
+    transform: translateZ(20px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(250, 0, 150, 0.4);
+  }
+  100% {
+    transform: translateZ(0);
+    box-shadow: none;
+  }
 }
