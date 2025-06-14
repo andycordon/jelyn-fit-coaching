@@ -24,9 +24,11 @@ footer .pictoAlig {
   font-family: 'Quicksand', sans-serif;
 }
 
+
 p {
   font-size: 1.125rem;
 }
+
 
 header {
   background: var(--violet);
@@ -39,6 +41,8 @@ header {
   justify-content: space-between;
   padding: 1rem;
   position: relative;
+  background-color: var(--violet);
+  
 }
 
 .brand-name {
@@ -46,22 +50,21 @@ header {
 }
 
 .logo-form {
-  width: 100%;
-  max-width: 280px;
+  max-width: 250px;
   display: block;
-  margin: -6rem auto 0 auto;
+  margin:  0 auto;
   animation: heartbeat 1.5s ease-in-out infinite;
   transform-origin: center;
   z-index: 1;
 }
 .logo-txt {
-  width: 50%;
+  width: 60%;
   max-width: 400px;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
   z-index: 1;
-  margin: 2rem 0 0 0;
 }
+
 
 
 @keyframes heartbeat {
@@ -82,12 +85,12 @@ header {
   }
 }
 
-.logo img {
-  width: 60px;
+.logo-header {
+  width: 40px;
   background-color: white;
   padding: 0.5rem;
   margin: -10px -10px -15px -10px;
-  border-radius: 5px 5px 2rem 5px;
+  border-radius: 5px 5px 1.5rem 5px;
 }
 
 
@@ -141,18 +144,24 @@ nav ul li a:hover {
   max-height: 500px; /* assez grand pour le menu */
 }
 
-.hero {
+#hero {
   height: 100vh;
-  /* background: linear-gradient(to top, var(--blanc), var(--rose)); */
   color: var(--blanc);
+  background: linear-gradient(to top, var(--blanc), var(--rose));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 80px;   /* adapte à la hauteur réelle du header */
+  margin-top: -80px;
+  
+  
 }
 
-
+img {
+  width: 100%;
+}
 
 .cta-button {
   margin-top: 2rem;
@@ -255,7 +264,7 @@ nav ul li a:hover {
 footer {
   background: var(--violet);
   color: var(--blanc);
-  padding: 1rem;
+  padding: 1rem 0 0 0;
   text-align: center;
   border-top: 0.3rem solid var(--rose);
 }
@@ -266,14 +275,14 @@ footer {
 }
 
 .footer-social {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  border-bottom: 0.2rem solid var(--blanc);
+  padding-bottom: 1rem;
 }
 
 .footer-social a {
   color: var(--blanc);
   margin: 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   transition: color 0.3s ease;
 }
 
@@ -283,12 +292,14 @@ footer {
 
 .footer-nav {
   list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+  margin: 0;
+  padding: 1rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.8rem;
+  background-color: var(--rose);
+
 }
 
 .footer-nav a {
@@ -298,7 +309,7 @@ footer {
 }
 
 .footer-nav a:hover {
-  color: var(--rose);
+  color: var(--violet);
 }
 
 .copyright {
@@ -321,10 +332,13 @@ footer {
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   font-size: 0.9rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+
 }
 
 .sub-footer a:hover {
-  text-decoration: underline;
+  color: var(--rose);
 }
 
 
@@ -353,10 +367,7 @@ section h1 {
 
 
 
- img {
-  max-width: 80%;
-  height: auto;
-}
+
 
 button {
   background-color: var(--violet);
@@ -457,54 +468,58 @@ button:focus {
 
 
 
-.scroll-top {
-    width: 20px;
-  height: 25px;
+.scroll-top, .call-button {
+  width: 12px;
+  height: 20px;
   position: fixed;
-  bottom: 3rem;
-  right: 1.5rem;
-  background-color: var(--violet);
+  right: 0rem;
+  background-color: var(--rose);
   color: var(--blanc);
   padding: 0.8rem 1rem;
-  border-radius: 5px 5px 20px 5px;
   text-align: center;
-  font-size: 1.2rem;
   z-index: 1000;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   opacity: 0.8;
-
+  display: flex;
 }
-
-.scroll-top:hover {
-  background-color: var(--rose);
-}
-
 
 .call-button {
-  width: 20px;
-  height: 25px;
-  position: fixed;
-  bottom: 6.5rem;
-  right: 1.5rem;
-  background-color: var(--violet);
-  color: var(--blanc);
-  padding: 0.8rem 1rem;
-  border-radius: 20px 5px 5px 5px;
-  text-align: center;
+  border-radius: 20px 0px 0px 0px;
+  bottom: 4rem;
   font-size: 1.2rem;
-  z-index: 1000;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  opacity: 0.8;
 }
 
-.call-button:hover {
-  background-color: var(--rose);
+.scroll-top {
+  border-radius: 0px 0px 0px 20px;
+  bottom: 1rem;
+  font-size: 1.4rem;
 }
 
+
+.scroll-top:hover, .call-button:hover {
+  background-color: var(--violet);
+}
 
 .logo-footer {
   width: 40%;
-  padding: 0 0 1rem 0;
+  padding:1rem ;
+  background-color: var(--blanc);
+  border-radius: 2rem;
+}
+
+
+
+.footer-contact p {
+  margin: 0.3rem 0;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--rose);
 }
