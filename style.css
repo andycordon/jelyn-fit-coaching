@@ -52,7 +52,7 @@ header {
 .logo-form {
   max-width: 250px;
   display: block;
-  margin:  0 auto;
+  margin:  -5rem auto 0 auto;
   animation: heartbeat 1.5s ease-in-out infinite;
   transform-origin: center;
   z-index: 1;
@@ -469,8 +469,8 @@ button:focus {
 
 
 .scroll-top, .call-button {
-  width: 12px;
-  height: 20px;
+  width: 15px;
+  height: 25px;
   position: fixed;
   right: 0rem;
   background-color: var(--rose);
@@ -486,7 +486,7 @@ button:focus {
 
 .call-button {
   border-radius: 20px 0px 0px 0px;
-  bottom: 4rem;
+  bottom: 4.3rem;
   font-size: 1.2rem;
 }
 
