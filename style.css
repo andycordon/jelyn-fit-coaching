@@ -98,9 +98,13 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 80px;   /* adapte à la hauteur réelle du header */
+}
+
+#top {
+    padding-top: 80px;   /* adapte à la hauteur réelle du header */
   margin-top: -80px;
 }
+
 /*Logo coeur*/
 .logo-form {
   max-width: 250px;
