@@ -54,6 +54,11 @@ hr {
   width: 80%;
   color: var(--violet);
 }
+.images {
+  border-radius: 1rem 1rem 5rem 1rem;
+  border: 0.3rem solid var(--violet);
+  padding: 0.3rem;
+}
 
 /*Header*/
 .header-container {
@@ -489,8 +494,3 @@ footer {
 }
 
 
-.images {
-  border-radius: 1rem 1rem 5rem 1rem;
-  border: 0.3rem solid var(--violet);
-  padding: 0.3rem;
-}
