@@ -442,7 +442,7 @@ footer {
 
 /*Qui suis-je*/
 .photo-presentation {
-  border-radius: 100%;
+  border-radius: 1rem 1rem 5rem 1rem;
   height: 15rem;
   width: 15rem;
   padding: 0.3rem;
@@ -464,4 +464,33 @@ footer {
   background-color: var(--violet);
   margin: 1rem 0;
 
+}
+
+
+
+
+
+
+/*Formules*/
+.price {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: var(--rose);
+  margin: -1rem 0 0 0;
+}
+.price p {
+  font-size: 3.7rem;
+  font-weight: 900;
+  font-family: 'Quicksand', sans-serif;}
+
+.fa-euro-sign {
+  font-size: 3.2rem;
+}
+
+
+.images {
+  border-radius: 1rem 1rem 5rem 1rem;
+  border: 0.3rem solid var(--violet);
+  padding: 0.3rem;
 }
