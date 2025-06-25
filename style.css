@@ -1,3 +1,10 @@
+/*RESET CSS*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
 /*Bases*/
 :root {
   --violet: #1A0058;
@@ -21,13 +28,32 @@ footer ul li a,
 footer {
   font-family: 'Quicksand', sans-serif;
 }
+
+h1 {
+  font-size: 2.2rem;
+  color: var(--violet);
+  margin:0.5rem 0;
+}
+h2 {
+  font-size: 1.8rem;
+  color: var(--rose);
+  margin:1rem 0 0 0;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0 0 -0.5rem 0;
+}
 p {
   font-size: 1.125rem;
 }
 img {
   width: 100%;
 }
-
+hr {
+  width: 80%;
+  color: var(--violet);
+}
 
 /*Header*/
 .header-container {
@@ -262,22 +288,18 @@ nav ul li a:hover {
 
 /*contenu de page standard*/
 section {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
-section h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: var(--violet);
-  margin-bottom: 0.5rem;
-}
+
 /*bouton des contenus*/
-button {
+
+.go-button {
+  display: inline-block;
   background-color: var(--violet);
   color: var(--blanc);
   border: none;
@@ -288,12 +310,9 @@ button {
   cursor: pointer;
   border-radius:2rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  outline: none;
-  user-select: none;
-  transform-style: preserve-3d;
-  perspective: 500px;
+  text-decoration: none;
 }
-button:hover {
+.go-button:hover {
   background-color: var(--rose);
   animation: jump-forward 0.3s forwards;
 }
@@ -410,4 +429,39 @@ footer {
   color: #ffffff;
   margin-top: 0rem;
   font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*Qui suis-je*/
+.photo-presentation {
+  border-radius: 100%;
+  height: 15rem;
+  width: 15rem;
+  padding: 0.3rem;
+  border: 0.3rem solid var(--violet);
+}
+
+.title-em {
+  margin: -0.5rem 0 0 0;
+}
+
+.fa-graduation-cap, .fa-briefcase, .fa-heart-circle-bolt, .fa-chart-line, .fa-dumbbell, .fa-weight-scale {
+  font-size:5rem;
+  color: var(--violet);
+  margin-bottom: -0.5rem;
+}
+
+#qui hr {
+  height: 0.1rem;
+  background-color: var(--violet);
+  margin: 1rem 0;
+
 }
