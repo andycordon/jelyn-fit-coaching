@@ -461,7 +461,7 @@ footer {
   margin: -0.5rem 0 0 0;
 }
 
-.fa-graduation-cap, .fa-briefcase, .fa-heart-circle-bolt, .fa-chart-line, .fa-dumbbell, .fa-weight-scale {
+.fa-graduation-cap, .fa-briefcase, .fa-heart-circle-bolt, .fa-utensils, .fa-dumbbell, .fa-weight-scale {
   font-size:5rem;
   color: var(--violet);
   margin-bottom: -0.5rem;
