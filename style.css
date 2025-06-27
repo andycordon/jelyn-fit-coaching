@@ -375,9 +375,9 @@ footer {
 }
 .logo-footer {
   width: 40%;
-  padding:1rem ;
+  padding:1rem;
   background-color: var(--blanc);
-  border-radius: 2rem;
+  border-radius: 1rem 1rem 5rem 1rem;
 }
 .footer-contact p {
   margin: 0.3rem 0;
@@ -506,7 +506,10 @@ footer {
 }
 
 #contact a .fa-phone,
-#contact a .fa-envelope {
+#contact a .fa-envelope,
+#contact a .fa-facebook,
+#contact a .fa-instagram,
+#contact a .fa-youtube{
   color: var(--violet);
   font-size: 2rem;
   transition: color 0.4s ease;
@@ -517,7 +520,10 @@ footer {
 }
 
 #contact a:hover .fa-phone,
-#contact a:hover .fa-envelope {
+#contact a:hover .fa-envelope,
+#contact a:hover .fa-facebook,
+#contact a:hover .fa-instagram,
+#contact a:hover .fa-youtube{
   color: var(--rose);
 }
 
