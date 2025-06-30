@@ -17,6 +17,7 @@ html {
 }
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 /* Titres, menus, boutons */
@@ -298,10 +299,19 @@ nav ul li a:hover {
 section {
   padding: 20px;
   text-align: center;
+}
+
+#hero, #accueil,
+#qui, #coachings,
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+#tarifs {
+  padding: 20px 0;
 }
 
 /*bouton des contenus*/
@@ -540,3 +550,132 @@ iframe {
   border: 0.3rem solid var(--violet);
   padding: 0.3rem;
 }
+
+
+
+
+
+
+
+
+/*Tarifs*/
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  color: var(--blanc);
+  padding: 1rem;
+}
+
+.card {
+  width: 16rem;
+  height: 16rem;
+  perspective: 1000px;
+  flex-shrink: 0;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(-180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: var(--rose);
+  border: 0.3rem solid var(--violet);
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem 1rem 5rem 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-front em {
+  margin: 1rem 0 0 0;
+}
+
+.price-tarif {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.price-tarif p {
+  font-size: 3.7rem;
+  font-weight: 900;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.plus-icon {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--blanc);
+  color: var(--rose);
+  padding: 0.3rem;
+  border-radius: 0.4rem 0.8rem 0.4rem 0.4rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 1rem 1rem 1rem 5rem;
+  padding-bottom: 3.5rem;
+}
+
+
+.card-button {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: var(--violet);
+  color: var(--blanc);
+  padding: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0 0 0rem 5rem;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.card-button span {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.card-button:hover span {
+  animation: jump-text 0.3s forwards;
+}
+
+@keyframes jump-text {
+  50% {
+    transform: scale(1.2);
+    text-shadow: 0 5px 15pxrgba(0, 250, 62, 0.3);
+    color: var(--rose);
+
+  }
+}
+
+
+
