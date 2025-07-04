@@ -680,3 +680,112 @@ iframe {
 
 
 
+
+
+
+
+
+
+
+/*Infos pratiques*/
+#informations {
+padding: 1.2rem 0;
+}
+
+#infos {
+}
+
+.info-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-menu a {
+text-decoration: none; 
+}
+.info-menu a p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid var(--violet);
+  background-color: var(--rose);
+  border-radius: 1rem 1rem 5rem 1rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  margin: 0.3rem;
+  color: var(--blanc);
+  padding: 0rem;
+  height: 3rem;
+  width: 8rem;
+  transition: all 0.3s ease;
+}
+.info-menu a p:hover{
+  background-color: var(--violet);
+  border: 0.2rem solid var(--violet);
+  box-shadow: none;
+  opacity: 0.8;
+}
+#infos h2 {
+  padding: 0 0 1rem 0;  
+  border-bottom: 0.2rem solid var(--violet);
+}
+#infos details {
+  color: #fff;
+  border-bottom: 0.2rem solid var(--violet);
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  text-align: left;
+  color: var(--noir);
+}
+#infos summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  padding:0.5rem 0.5rem 0.5rem 1rem;
+  font-size: 1.4rem;  
+}
+#infos summary:after {
+  content: "\002B";
+  padding:0.1rem 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 1rem;
+  background-color: var(--rose);
+  color: var(--blanc);
+  border: 0.2rem solid var(--violet);
+}
+#infos details[open] summary {
+  border: 0.2rem solid var(--violet);
+  border-radius: 1rem 1rem 0rem 0rem;
+  margin: 0rem 0.5rem 0 0;
+  padding: 0.35rem 0rem 0.5rem 0.83rem;
+  
+  
+}
+#infos details[open] summary:after {
+  content: "\2212";
+  margin-right: 0.83rem;
+  margin-top: 0.5rem;
+
+
+}
+#infos .reponse {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background-color: var(--violet);
+  color: var(--blanc);
+  border-radius: 0rem 0rem 5rem 0.5rem;
+}	
+#infos details[open] summary ~ * , details[open] summary:after {
+  animation: sweep 800ms ea se-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0}
+  100%  {opacity: 1}
+}
+#infos article {
+  padding:1rem 0;
+  margin: 3rem 0;
+}
+
