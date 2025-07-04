@@ -643,7 +643,7 @@ iframe {
   justify-content: flex-start;
   position: relative;
   border-radius: 1rem 1rem 1rem 5rem;
-  padding-bottom: 3.5rem;
+  padding:0 0 3.5rem 0;
 }
 
 
@@ -678,7 +678,13 @@ iframe {
   }
 }
 
+.title-back-card {
+  margin: 0.5rem 0;
+}
 
+.card-back em {
+  margin: 0 0 0.5rem 0;
+}
 
 
 
