@@ -462,10 +462,7 @@ footer {
 }
 
 .presentation-block {
-  border: 0.25rem solid var(--violet);
   padding: 1rem;
-  border-radius: 1rem 1rem 5rem 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -478,14 +475,12 @@ footer {
 }
 
 .presentation-block p {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.images-presentation {
-    border-radius: 1rem;
-}
+
 
 
 
@@ -903,7 +898,6 @@ text-decoration: none;
 
 /*Blog*/
 .blog-block {
-  border: 0.25rem solid var(--violet);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 1rem 1rem 5rem 1rem;
