@@ -303,7 +303,7 @@ section {
 
 #hero, #accueil,
 #qui, #coachings,
-#contact {
+#contact, #paiement {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -695,6 +695,30 @@ iframe {
   margin: 0 0 0.5rem 0;
 }
 
+#paiement {
+  margin-top: -3rem;
+}
+#paiement h3{
+  padding: 0.5rem 0;
+}
+
+.fa-coins, .fa-building-columns, .fa-money-check {
+  color: var(--violet);
+  font-size: 3rem;
+}
+
+.section-paiement div{
+  margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -827,7 +851,6 @@ text-decoration: none;
   font-size: 3rem;
   color: var(--violet);
 }
-
 
 #tarifs-coaching h3{
   margin-bottom: -1rem;
