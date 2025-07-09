@@ -480,7 +480,14 @@ footer {
   line-height: 1.5;
 }
 
-
+.fa-heart-pulse,
+.fa-person-arrow-up-from-line,
+.fa-hand-holding-heart,
+.fa-signs-post {
+  color: var(--violet);
+  font-size: 3rem;
+  margin-top: 0.5rem;
+}
 
 
 
