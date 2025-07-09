@@ -303,7 +303,7 @@ section {
 
 #hero, #accueil,
 #qui, #coachings,
-#contact, #paiement {
+#contact, #paiement, #blog {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -326,7 +326,7 @@ section {
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
-  border-radius:2rem;
+  border-radius:1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
 }
@@ -452,6 +452,40 @@ footer {
   font-size: 0.9rem;
 }
 
+
+
+
+
+/*index*/
+.texte-presentation{
+  margin-bottom: 1rem;
+}
+
+.presentation-block {
+  border: 0.25rem solid var(--violet);
+  padding: 1rem;
+  border-radius: 1rem 1rem 5rem 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-block h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0rem;
+}
+
+.presentation-block p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.images-presentation {
+    border-radius: 1rem;
+}
 
 
 
@@ -861,4 +895,36 @@ text-decoration: none;
 }
 #tarifs-coaching .card-back p{
   padding: 0.5rem;  
+}
+
+
+
+
+
+/*Blog*/
+.blog-block {
+  border: 0.25rem solid var(--violet);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 1rem 1rem 5rem 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-block h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0rem;
+}
+
+.blog-block p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.images-blog {
+    border-radius: 1rem;
 }
