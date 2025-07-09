@@ -823,7 +823,7 @@ text-decoration: none;
   padding: 0.5rem 0 1rem 0;
 }
 
-.fa-person-running, li .fa-dumbbell, .fa-person-dots-from-line, .fa-person-praying, .fa-music {
+.fa-person-running, li .fa-dumbbell, .fa-hand-fist, .fa-person-praying, .fa-music {
   font-size: 3rem;
   color: var(--violet);
 }
