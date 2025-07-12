@@ -101,6 +101,8 @@ nav {
   background: var(--violet);
   width: 100%;
   z-index: 2;
+  border-top: 0.2rem solid var(--blanc);
+  text-align: center;
 }
 nav ul {
   list-style: none;
@@ -108,7 +110,8 @@ nav ul {
   margin: 0;
 }
 nav ul li {
-  border-top: 1px solid var(--blanc);
+  border-bottom: 0.2rem solid var(--blanc);
+  font-size: 1.2rem;
 }
 nav ul li a {
   display: block;
@@ -118,6 +121,9 @@ nav ul li a {
    transition: background-color 0.3s ease;
 }
 nav ul li a:hover {
+  background-color: var(--rose);
+}
+nav ul li:hover {
   background-color: var(--rose);
 }
 
@@ -929,3 +935,4 @@ text-decoration: none;
 .images-blog {
     border-radius: 1rem;
 }
+
