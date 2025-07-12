@@ -309,7 +309,8 @@ section {
 
 #hero, #accueil,
 #qui, #coachings,
-#contact, #paiement, #blog {
+#contact, #paiement, #blog,
+#cgv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -919,6 +920,7 @@ text-decoration: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0.3rem solid var(--violet);
 }
 
 .blog-block h2 {
@@ -935,4 +937,3 @@ text-decoration: none;
 .images-blog {
     border-radius: 1rem;
 }
-
