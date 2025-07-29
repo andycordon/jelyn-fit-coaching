@@ -916,6 +916,11 @@ details[open] .reponse {
 
 
 /*Blog*/
+.blog-block-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .blog-block {
   padding: 1rem;
   margin: 0.5rem 0;
@@ -926,19 +931,44 @@ details[open] .reponse {
   justify-content: center;
   align-items: center;
   border: 0.3rem solid var(--violet);
-}
+  transition: all 0.2s ease;
 
+}
+.blog-block:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  scale: 1.025;
+  border: 0.3rem solid var(--rose);
+}
 .blog-block h2 {
   font-size: 1.8rem;
   margin: 0 0 1rem 0rem;
+  transition: color 0.2s ease;
 }
-
 .blog-block p {
   margin: 1rem 0;
   font-size: 1rem;
   line-height: 1.5;
 }
-
 .images-blog {
     border-radius: 1rem;
+}
+.article-button {
+  display: inline-block;
+  background-color: var(--violet);
+  color: var(--blanc);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius:1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.blog-block:hover .article-button {
+  background-color: var(--rose);
+}
+.blog-block:hover h2 {
+  color: var(--violet);
 }
