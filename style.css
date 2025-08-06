@@ -38,7 +38,7 @@ h1 {
 h2 {
   font-size: 1.8rem;
   color: var(--rose);
-  margin:1rem 0 0 0;
+  margin:2rem 0 0 0;
 }
 h3 {
   font-size: 1.4rem;
@@ -128,6 +128,14 @@ nav ul li:hover {
 }
 
 
+.here-page {
+  color: var(--rose);
+}
+.here-page:hover {
+  color: var(--violet);
+}
+
+
 
 /*Page d'accueil presentation de base*/
 #hero {
@@ -142,7 +150,7 @@ nav ul li:hover {
 }
 
 #top {
-    padding-top: 80px;   /* adapte à la hauteur réelle du header */
+  padding-top: 80px;   /* adapte à la hauteur réelle du header */
   margin-top: -80px;
 }
 
@@ -183,6 +191,7 @@ nav ul li:hover {
 /*Slogan*/
 .slogan {
   color: var(--noir);
+  font-size: 1.2rem;
 }
 /*Bouton call to action de presentation*/
 .cta-button {
@@ -196,7 +205,7 @@ nav ul li:hover {
   background: linear-gradient(270deg, #6a1b9a, #f48fb1, #8e24aa);
   background-size: 600% 600%;
   animation: gradientShift 6s ease infinite;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 .cta-button:hover {
   transform: scale(1.05);
@@ -284,9 +293,9 @@ nav ul li:hover {
   text-align: center;
   z-index: 1000;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
   opacity: 0.8;
   display: flex;
+  transition: all 0.3s ease;
 }
 .call-button {
   border-radius: 20px 0px 0px 0px;
@@ -298,6 +307,10 @@ nav ul li:hover {
   bottom: 1rem;
   font-size: 1.4rem;
 }
+.scroll-top:hover, .call-button:hover {
+  background-color: var(--violet);
+  color: var(--rose);
+}
 
 
 
@@ -308,9 +321,9 @@ section {
 }
 
 #hero, #accueil,
-#qui, #coachings,
+#qui, #coachings, #coachings2
 #contact, #paiement, #blog,
-#cgv {
+#cgv, #article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -403,7 +416,7 @@ footer {
   margin: 0.3rem 0;
 }
 .footer-contact a {
-  color: inherit;
+  color: var(--blanc);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -431,6 +444,12 @@ footer {
   transition: color 0.3s ease;
 }
 .footer-nav a:hover {
+  color: var(--violet);
+}
+.footer-nav .here-footer{
+  color: var(--noir);
+}
+.footer-nav .here-footer:hover{
   color: var(--violet);
 }
 
@@ -570,11 +589,9 @@ footer {
   color: var(--violet);
   font-size: 2rem;
   transition: color 0.4s ease;
+  margin-top: 1rem;
 }
 
-#contact a .fa-facebook {
-    font-size: 1.8rem;
-}
 
 #contact a:hover {
   color: var(--rose);
@@ -592,6 +609,8 @@ footer {
 #contact .fa-location-dot {
   font-size: 2.2rem;
   color: var(--violet);
+    margin-top: 1rem;
+
 }
 
 
@@ -601,8 +620,15 @@ iframe {
   border-radius: 1rem 1rem 5rem 1rem;
   border: 0.3rem solid var(--violet);
   padding: 0.3rem;
-}
 
+}
+.video {
+  width:100%;
+  height: 320px;
+  border-radius: 1rem 1rem 5rem 1rem;
+  border: 0.3rem solid var(--violet);
+  padding: 0.3rem;
+}
 
 
 
@@ -685,7 +711,7 @@ iframe {
   background-color: var(--blanc);
   color: var(--rose);
   padding: 0.3rem;
-  border-radius: 0.4rem 0.8rem 0.4rem 0.4rem;
+  border-radius: 0.4rem 0.7rem 0.4rem 0.4rem;
 }
 
 .card-back {
@@ -696,6 +722,7 @@ iframe {
   position: relative;
   border-radius: 1rem 1rem 1rem 5rem;
   padding:0 0 3.5rem 0;
+
 }
 
 
@@ -724,9 +751,8 @@ iframe {
 @keyframes jump-text {
   50% {
     transform: scale(1.2);
-    text-shadow: 0 5px 15pxrgba(0, 250, 62, 0.3);
+    text-shadow: 0 5px 15px rgba(0, 250, 62, 0.3);
     color: var(--rose);
-
   }
 }
 
@@ -794,7 +820,6 @@ transition: all 0.3s ease;
 .info-menu a:hover{
   background-color: var(--rose);
   box-shadow: none;
-
 }
 #infos h2 {
   padding: 0 0 1rem 0;  
@@ -868,7 +893,13 @@ details[open] .reponse {
   }
 }
 
-
+.reponse p a {
+  color: var(--blanc);
+  transition: all 0.3s ease;
+}
+.reponse p a:hover {
+  color: var(--rose);
+}
 
 
 
@@ -972,3 +1003,297 @@ details[open] .reponse {
 .blog-block:hover h2 {
   color: var(--violet);
 }
+
+
+
+
+
+
+/*Article template*/
+
+.hover-article-button {
+  transition: all 0.3s ease;
+}
+.hover-article-button:hover {
+  background: var(--rose);
+}
+
+.article-link {
+  color: var(--violet);
+  transition: all 0.3s ease;
+}
+.article-link:hover {
+  color: var(--rose);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLETTE */
+@media screen and (min-width: 768px) {
+
+/*Logo header*/
+.logo-header {
+  width: 70px;
+}
+/*Nom du header*/
+.brand-name {
+  font-size: 1.8rem;
+}
+/*Bouton header*/
+.menu-icon {
+  gap: 10px;
+  width: 50px;
+}
+#menu-toggle:checked + .menu-icon .top {
+  transform: translateY(14px);
+}
+#menu-toggle:checked + .menu-icon .bottom {
+  transform: translateY(-14px);
+}
+/*Logo coeur*/
+.logo-form {
+  max-width: 350px;
+}
+/*Texte du logo*/
+.logo-txt {
+  max-width: 300px;
+}
+/*Image*/
+img {
+  width: 50%;
+}
+.logo-footer {
+  width: 20%;
+  padding:1rem;
+  background-color: var(--blanc);
+  border-radius: 1rem 1rem 5rem 1rem;
+}
+
+/*Articles de blog cards*/
+.blog-categories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.blog-block {
+  width: 300px;
+}
+.images-blog {
+    width: 100%;
+}
+
+/*map et videos articles*/
+iframe, .video{
+  max-width:700px;
+  height: 450px;
+}
+
+/*Reseau contact*/
+#contact a .fa-whatsapp,
+#contact a .fa-facebook,
+#contact a .fa-instagram,
+#contact a .fa-youtube{
+  font-size: 3.2rem;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+.menu-icon,
+#menu-toggle {
+  display: none;
+}
+header {
+  border-bottom: 0.2rem solid var(--blanc);
+}
+nav {
+  border-top: none;
+  position: static;
+  max-height: none;
+  width: auto;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem 0.5rem 1rem 0.5rem;
+  
+}
+nav ul li a:hover {
+  background: var(--rose);
+}
+nav ul li:hover {
+  background: none;
+}
+
+/*Nom du header*/
+.brand-name {
+position: absolute;
+margin-left: 6rem;
+}
+
+.logo-footer{
+  max-width: 12rem;
+}
+
+img {
+  max-width: 30rem;
+}
+
+/*all contenu large pages*/
+section{
+  max-width: 1054px;
+  margin: auto;
+}
+#hero {
+  max-width: 100%;
+}
+
+/*map et videos articles*/
+iframe, .video{
+  max-width:1024px;
+  height: 600px;
+}
+.flex-center-iframe {
+  display: flex;
+}
+
+/*Infos pratiques*/
+.info-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  padding:1rem;
+  margin: 0.5rem;
+}
+
+
+/*Tarifs*/
+#tarifs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#tarifs-coaching {
+margin: auto;
+
+}
+
+
+.go-button {
+  display: inline-block;
+  background-color: var(--violet);
+  color: var(--blanc);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius:1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.go-button:hover {
+  background-color: var(--rose);
+  animation: jump-forward 0.3s forwards;
+}
+
+
+.presentation-block-all{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.presentation-block img {
+  width: 95%;
+}
+.presentation-block {
+  width: 260px;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem 1rem 5rem 1rem;
+
+}
+
+.txt-pres-heigt{
+  height: 180px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
