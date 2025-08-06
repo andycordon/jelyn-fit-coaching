@@ -129,10 +129,12 @@ nav ul li:hover {
 
 
 .here-page {
-  color: var(--rose);
+background-color: var(--blanc);
+color: var(--violet);
+transition: all 0.3s ease;
 }
 .here-page:hover {
-  color: var(--violet);
+  color: var(--blanc);
 }
 
 
@@ -296,6 +298,10 @@ nav ul li:hover {
   opacity: 0.8;
   display: flex;
   transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .call-button {
   border-radius: 20px 0px 0px 0px;
@@ -328,6 +334,9 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+#coachings2 {
+  margin-top: -3rem;
 }
 
 #tarifs, #tarifs-coaching {
@@ -441,16 +450,21 @@ footer {
 .footer-nav a {
   color: var(--blanc);
   text-decoration: none;
+  border-radius: 0.5rem 0.5rem 1rem 0.5rem;
+  padding: 0.5rem;
   transition: color 0.3s ease;
 }
 .footer-nav a:hover {
   color: var(--violet);
 }
 .footer-nav .here-footer{
-  color: var(--noir);
+  transition: all 0.3s ease;
+  background-color: var(--violet);
+
 }
 .footer-nav .here-footer:hover{
   color: var(--violet);
+  background-color: var(--blanc);
 }
 
 
@@ -1003,7 +1017,9 @@ details[open] .reponse {
 .blog-block:hover h2 {
   color: var(--violet);
 }
-
+.txt-cards-heigt {
+    height: 6rem;
+}
 
 
 
@@ -1084,6 +1100,26 @@ img {
   padding:1rem;
   background-color: var(--blanc);
   border-radius: 1rem 1rem 5rem 1rem;
+}
+
+/*Tarifs*/
+#tarifs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+#tarifs-coaching {
+margin: auto;
+
 }
 
 /*Articles de blog cards*/
@@ -1174,11 +1210,11 @@ nav ul li:hover {
 position: absolute;
 margin-left: 6rem;
 }
-
+/*Taille logo footer*/
 .logo-footer{
   max-width: 12rem;
 }
-
+/*Taille max des imagzes*/
 img {
   max-width: 30rem;
 }
@@ -1188,6 +1224,7 @@ section{
   max-width: 1054px;
   margin: auto;
 }
+/*Pour ettendre le degradé sur toute la largeur*/
 #hero {
   max-width: 100%;
 }
@@ -1220,24 +1257,7 @@ iframe, .video{
 }
 
 
-/*Tarifs*/
-#tarifs{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.scroll-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#tarifs-coaching {
-margin: auto;
-
-}
 
 
 .go-button {
@@ -1259,7 +1279,7 @@ margin: auto;
   animation: jump-forward 0.3s forwards;
 }
 
-
+/*Menu cards*/
 .presentation-block-all{
   display: flex;
   flex-wrap: wrap;
@@ -1274,14 +1294,40 @@ margin: auto;
   margin: 1rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 1rem 1rem 5rem 1rem;
 
 }
-
 .txt-pres-heigt{
   height: 180px;
 }
+
+/*Blog cards*/
+.blog-block {
+  width: 290px;
+}
+.blog-block h2 {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+/*Call top button*/
+.scroll-top, .call-button {
+  width: 30px;
+  height: 35px;
+  padding: 1rem;
+}
+.call-button {
+  bottom: 8.3rem;
+  font-size: 1.8rem;
+  
+}
+.scroll-top {
+  bottom: 4rem;
+  font-size: 2.5rem;
+}
+
 
 
 
