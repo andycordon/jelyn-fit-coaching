@@ -65,6 +65,10 @@ hr {
 }
 
 /*Header*/
+header {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -72,6 +76,8 @@ hr {
   padding: 1rem;
   position: relative;
   background-color: var(--violet);
+  z-index: 2;
+
 }
 .logo-header {
   width: 40px;
@@ -103,6 +109,8 @@ nav {
   z-index: 2;
   border-top: 0.2rem solid var(--blanc);
   text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 nav ul {
   list-style: none;
@@ -643,7 +651,9 @@ iframe {
   border: 0.3rem solid var(--violet);
   padding: 0.3rem;
 }
-
+.flex-center-iframe {
+  display: flex;
+}
 
 
 
@@ -968,7 +978,7 @@ details[open] .reponse {
 }
 .blog-block {
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   border-radius: 1rem 1rem 5rem 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -1128,10 +1138,11 @@ margin: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  
 }
 .blog-block {
   width: 300px;
+  margin: 0.5rem;
 }
 .images-blog {
     width: 100%;
@@ -1177,12 +1188,14 @@ iframe, .video{
 }
 header {
   border-bottom: 0.2rem solid var(--blanc);
+
 }
 nav {
   border-top: none;
   position: static;
   max-height: none;
   width: auto;
+  box-shadow: none;
 }
 nav ul {
   display: flex;
@@ -1234,9 +1247,7 @@ iframe, .video{
   max-width:1024px;
   height: 600px;
 }
-.flex-center-iframe {
-  display: flex;
-}
+
 
 /*Infos pratiques*/
 .info-menu {
@@ -1314,12 +1325,12 @@ iframe, .video{
 
 /*Call top button*/
 .scroll-top, .call-button {
-  width: 30px;
-  height: 35px;
+  width: 25px;
+  height: 30px;
   padding: 1rem;
 }
 .call-button {
-  bottom: 8.3rem;
+  bottom: 8rem;
   font-size: 1.8rem;
   
 }
