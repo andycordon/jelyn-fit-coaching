@@ -12,6 +12,16 @@
   --blanc: #ffffff;
   --noir: #000000;
 }
+
+::selection {
+  color: var(--blanc);
+  background: var(--rose);
+}
+::-moz-selection {
+  color: var(--blanc);
+  background: var(--rose);
+}
+
 html {
   scroll-behavior: smooth;
 }
