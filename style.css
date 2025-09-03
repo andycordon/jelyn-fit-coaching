@@ -357,7 +357,7 @@ section {
   margin-top: -3rem;
 }
 
-#tarifs, #tarifs-coaching {
+#tarifs {
   padding: 20px 0;
 }
 
@@ -982,16 +982,7 @@ details[open] .reponse {
   color: var(--violet);
 }
 
-#tarifs-coaching h3{
-  margin-bottom: -1rem;
-}
-#tarifs-coaching {
-  margin: 0 0 -2rem 0;
-  padding: 0;
-}
-#tarifs-coaching .card-back p{
-  padding: 0.5rem;  
-}
+
 
 
 
@@ -1152,10 +1143,6 @@ img {
   padding: 1.5rem;
 }
 
-#tarifs-coaching {
-margin: auto;
-
-}
 
 /*Articles de blog cards*/
 .blog-categories{
