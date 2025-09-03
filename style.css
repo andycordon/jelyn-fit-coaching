@@ -419,7 +419,7 @@ footer {
 }
 .fa-facebook, .fa-instagram, .fa-youtube, .fa-whatsapp {
   color: var(--blanc);
-  margin: 0 0.7rem;
+  margin: 0 1.5rem;
   transition: color 0.3s ease;
 }
 .fa-whatsapp {
@@ -1131,7 +1131,7 @@ img {
   background-color: var(--blanc);
   border-radius: 1rem 1rem 5rem 1rem;
 }
-
+ 
 /*Tarifs*/
 #tarifs{
   display: flex;
