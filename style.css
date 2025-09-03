@@ -361,6 +361,10 @@ section {
   padding: 20px 0;
 }
 
+#article .article-button {
+  margin: 2rem 0;
+}
+
 /*bouton des contenus*/
 
 .go-button {
