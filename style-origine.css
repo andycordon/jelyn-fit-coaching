@@ -21,6 +21,16 @@
   background: var(--rose);
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -428,6 +438,8 @@ footer {
 }
 .logo-footer {
   width: 40%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   padding: 1rem;
   background-color: var(--blanc);
   border-radius: 1rem 1rem 5rem 1rem;
