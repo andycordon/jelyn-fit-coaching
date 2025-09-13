@@ -37,7 +37,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
 }
 /* Titres, menus, boutons */
 h1,
@@ -630,31 +631,7 @@ iframe {
   border: 0.3rem solid var(--violet);
   padding: 0.3rem;
 }
-/* .video-button {
-  position: relative;
-  display: inline-block;
-}
 
-.video-button img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 1rem 1rem 5rem 1rem;
-  border: 0.3rem solid var(--violet);
-  padding: 0.3rem;
-}
-
-.video-button .fa-youtube {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 4rem;
-  color: rgba(255, 0, 0, 0.85);
-  background: rgba(255, 255, 255, 1);
-  border-radius: 1rem;
-  padding: 0 0.3rem;
-  transform: translate(-50%, -50%);
-} */
 .flex-center-iframe {
   display: flex;
 }
