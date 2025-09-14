@@ -87,6 +87,8 @@ hr {
   border-radius: 1rem 1rem 5rem 1rem;
   border: 0.3rem solid var(--violet);
   padding: 0.3rem;
+  aspect-ratio: 1 / 1;
+
 }
 
 /*Header*/
