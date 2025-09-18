@@ -646,6 +646,7 @@ iframe {
   color: var(--blanc);
   padding: 1rem;
   margin-bottom: 2rem;
+  line-height: 1.4;
 }
 
 .card {
@@ -699,8 +700,12 @@ iframe {
 }
 .price-tarif p {
   font-size: 3.7rem;
-  font-weight: 900;
+  font-weight: 600;
   font-family: "Quicksand", sans-serif;
+}
+.price-tarif-devis {
+  line-height: 0.7;
+  margin-top: 0.3rem;
 }
 
 .plus-icon {
