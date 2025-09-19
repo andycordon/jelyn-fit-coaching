@@ -38,7 +38,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.6;
 }
 /* Titres, menus, boutons */
 h1,
@@ -533,7 +532,6 @@ footer {
 .presentation-block p {
   margin: 0.5rem 0;
   font-size: 1rem;
-  line-height: 1.5;
 }
 
 .fa-heart-pulse,
@@ -646,7 +644,6 @@ iframe {
   color: var(--blanc);
   padding: 1rem;
   margin-bottom: 2rem;
-  line-height: 1.4;
 }
 
 .card {
@@ -945,7 +942,6 @@ li .fa-dumbbell,
 .blog-block p {
   margin: 1rem 0;
   font-size: 1rem;
-  line-height: 1.5;
 }
 .images-blog {
   border-radius: 1rem;
