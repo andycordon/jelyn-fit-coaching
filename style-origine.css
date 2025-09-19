@@ -1206,7 +1206,8 @@ li .fa-dumbbell,
     width: 290px;
   }
   .blog-block h2 {
-    height: 5rem;
+    height: 7rem;
+    line-height: 1;
     display: flex;
     align-items: center;
   }
