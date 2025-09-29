@@ -1005,7 +1005,7 @@ li .fa-dumbbell,
   }
   /*Nom du header*/
   .brand-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   /*Bouton header*/
   .menu-icon {
@@ -1123,7 +1123,7 @@ li .fa-dumbbell,
   /*Nom du header*/
   .brand-name {
     position: absolute;
-    margin-left: 6rem;
+    margin-left: 5.5rem;
   }
   /*Taille logo footer*/
   .logo-footer {
@@ -1248,10 +1248,11 @@ li .fa-dumbbell,
   border-top: 0.3rem solid var(--violet);
   text-align: center;
   padding: 0.5rem 0;
+  margin-top: 2rem;
   font-weight: bold;
-  /* background-size: 600% 600%;
-  background: linear-gradient(270deg, var(--blanc), var(--rose));
-  animation: gradientShift 6s ease infinite; */
+  background: linear-gradient(270deg, var(--blanc) , var(--rose), var(--blanc));
+  background-size: 600% 600%;
+  animation: gradientShift 5s ease infinite;
 }
 
 .footer-cta a {
