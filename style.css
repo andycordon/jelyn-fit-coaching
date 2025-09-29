@@ -1005,7 +1005,7 @@ li .fa-dumbbell,
   }
   /*Nom du header*/
   .brand-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   /*Bouton header*/
   .menu-icon {
@@ -1123,7 +1123,7 @@ li .fa-dumbbell,
   /*Nom du header*/
   .brand-name {
     position: absolute;
-    margin-left: 6rem;
+    margin-left: 5.5rem;
   }
   /*Taille logo footer*/
   .logo-footer {
