@@ -791,7 +791,7 @@ iframe {
   margin: 1rem 0;
 }
 
-/*Infos pratiques*/
+/*Infos*/
 #informations {
   padding: 1.2rem 0;
 }
@@ -1151,7 +1151,7 @@ li .fa-dumbbell,
     height: 600px;
   }
 
-  /*Infos pratiques*/
+  /*Infos*/
   .info-menu {
     display: flex;
     flex-direction: row;
