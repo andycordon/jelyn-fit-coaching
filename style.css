@@ -999,6 +999,16 @@ li .fa-dumbbell,
   text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* TABLETTE */
 @media screen and (min-width: 768px) {
   /*Logo header*/
@@ -1085,6 +1095,16 @@ li .fa-dumbbell,
     font-size: 3.2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
