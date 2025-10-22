@@ -570,7 +570,9 @@ footer {
 .fa-heart-circle-bolt,
 .fa-bowl-rice,
 .fa-dumbbell,
-.fa-weight-scale {
+.fa-weight-scale,
+.fa-music,
+.fa-masks-theater {
   font-size: 5rem;
   color: var(--violet);
   margin-bottom: -0.5rem;
@@ -915,8 +917,7 @@ details[open] .reponse {
 li .fa-dumbbell,
 .fa-hand-fist,
 .fa-person-praying,
-.fa-music,
-.fa-masks-theater {
+{
   font-size: 3rem;
   color: var(--violet);
 }
